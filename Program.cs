@@ -12,15 +12,12 @@ public class Program
         Tafel.CreateTables();
         while (true)
         {
-
             // Send.SendReservationConfirmation("tymovanrijn@gmail.com", "23-04-2023", "18:00-20:00").Wait();
             Console.WriteLine("Met hoeveel personenen bent u?");
             int AantalPersonen = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
             Console.WriteLine(Tafel.ReserveerTafel(AantalPersonen));
             Tafel.Tafelindeling();
-
-            //clear the console
         }
 
     }
