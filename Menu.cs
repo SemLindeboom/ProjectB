@@ -149,6 +149,6 @@ public class Menu
             default:
                 Console.WriteLine("Wrong input");
                 break;
-        }   
+        }
     }
 }
