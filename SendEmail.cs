@@ -3,6 +3,14 @@ using System.Threading.Tasks;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 
+
+
+/*Hoe te gebruiken?
+Send.SendReservationConfirmation("tymovanrijn@gmail.com", "23-04-2023", "18:00-20:00").Wait();
+Het moet precies deze line zijn, de parameters moeten natuurlijk wel anders
+maar de wait moet er achter staan, anders werkt het niet.*/
+
+
 public static class Send
 {
     public static async Task SendReservationConfirmation(string receiverEmail, string reservationDate, string reservationTime)
